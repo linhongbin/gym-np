@@ -1,2 +1,14 @@
-
 **/__pycache__/
+
+gym_suture.egg-info/
+
+.vscode/
+
+data/
+
+segmentation/output/
+
+*.pth
+
+build/
+

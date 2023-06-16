@@ -1,0 +1,38 @@
+# This is the base file for Coordination Application
+# world config: ../../ext/surgical_robotics_challenge/ADF/world/world.yaml
+# world config: ../../ext/surgical_robotics_challenge/ADF/world/world_stereo.yaml
+world config: ../asset/world_stereo_modified.yaml
+color config: ../../ext/surgical_robotics_challenge/ADF/color/colors.yaml
+input devices config: ../../ext/surgical_robotics_challenge/ADF/input_devices/input_devices.yaml
+multibody configs:
+  - "../../ext/surgical_robotics_challenge/ADF/psm1.yaml" #0
+  - "../../ext/surgical_robotics_challenge/ADF/sensors_actuators_psm1.yaml" #1
+  - "../../ext/surgical_robotics_challenge/ADF/target1_ik.yaml" #2
+  - "../asset/psm2_high_PID_rgb_phantom.yaml" #3
+  - "../../ext/surgical_robotics_challenge/ADF/sensors_actuators_psm2.yaml" #4
+  # - "../asset/sensors_actuators_psm2_visualize.yaml" #4
+  - "../../ext/surgical_robotics_challenge/ADF/target2_ik.yaml" #5
+  - "../../ext/surgical_robotics_challenge/ADF/psm3.yaml" #6
+  - "../../ext/surgical_robotics_challenge/ADF/sensors_actuators_psm3.yaml" #7
+  - "../../ext/surgical_robotics_challenge/ADF/target3_ik.yaml" #8
+  - "../../ext/surgical_robotics_challenge/ADF/env.yaml" #9
+  - "../../ext/surgical_robotics_challenge/ADF/gynae.yaml" #10
+  - "../../ext/surgical_robotics_challenge/ADF/all_targets.yaml" #11
+  - "../../ext/surgical_robotics_challenge/ADF/psm_debug.yaml" #12
+  - "../asset/phantom_without_thread_rgb.yaml" #13
+  - "../../ext/surgical_robotics_challenge/ADF/ghosts.yaml" #14
+  - "../../ext/surgical_robotics_challenge/ADF/phantom_with_thread.yaml" #15
+  - "../../ext/surgical_robotics_challenge/ADF/camera_frame.yaml" #16
+  - "../asset/needles/needles.yaml" # 17  
+  - "../asset/phantom_without_thread_origin.yaml" # 18 
+  - "../asset/psm2_high_PID_origin_phantom.yaml" #19
+  - "../asset/surgical_platform_origin.yaml" #20
+  - "../asset/surgical_platform_rgb.yaml" #21
+  - "../asset/psm2_high_PID_origin_cuboid.yaml" #22
+  - "../asset/psm2_high_PID_rgb_cuboid.yaml" #23
+  - "../asset/needle_circle.yaml" #24
+  - "../asset/needle_unregular.yaml" #25
+  - "../asset/needle_circle_large.yaml" #26
+  - "../asset/needle_circle_small.yaml" #27
+  - "../asset/needle_unregular2.yaml" #28
+  - "../asset/cube.yaml" #28

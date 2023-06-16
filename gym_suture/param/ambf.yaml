@@ -1,0 +1,6 @@
+NeedlePicking_wrapper:
+  camL_local_pos: [0.1867, 0.7005, -0.7930]
+  camL_local_quat: [0.0616, -0.0616, 0.7044, 0.7044]
+
+ImagePreprocess_wrapper:
+  zoom_margin_ratio: 0.5
