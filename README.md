@@ -83,6 +83,7 @@ Our code was tested in
 
 - **Train with DreamerBC**
   ```sh
+  source bash/ambf/init.sh
   python ext/DreamerBC/examples/suture_json.py --default-json ./ext/DreamerBC/examples/jsons/default_np.yaml --section 1 --logdir ./data/rl_log
   ```
   It will take 3 days on RTX3070 GPU (2 days on RTX 3090)  for convergence of evaluated succeses rate (reaching 80%).
@@ -96,6 +97,7 @@ Our code was tested in
   
   Baseline: [Dreamer](https://danijar.com/project/dreamerv2/)
   ```sh
+  source bash/ambf/init.sh
   python ext/DreamerBC/examples/suture_json.py --default-json ./ext/DreamerBC/examples/jsons/default_np.yaml --json ./ext/DreamerBC/examples/jsons/Dreamer.yaml --section 1 --logdir ./data/rl_log
   ```
 

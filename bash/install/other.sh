@@ -1,4 +1,4 @@
-conda install -c conda-forge python-orocos-kdl -y# conda install PyKDL using pre-compiled package
+conda install -c conda-forge python-orocos-kdl -y # conda install PyKDL using pre-compiled package
 
 pushd ./ext/surgical_robotics_challenge/scripts/
 pip install -e .

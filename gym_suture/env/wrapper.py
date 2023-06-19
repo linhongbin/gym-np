@@ -1044,8 +1044,9 @@ class GymSutureEnv(object):
         # load custom config and update
         custom_file = Path(__file__).parent.parent / "param" / (robot_type + ".yaml")
         custom_config = yaml.safe_load(custom_file.read_text())
-        for k, v in custom_config.items():
-            config[k].update(v)
+        if custom_config is not None:
+            for k, v in custom_config.items():
+                config[k].update(v)
 
         # update needle config
         needle_name = "needle_" + needle_type
