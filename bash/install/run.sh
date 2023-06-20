@@ -14,4 +14,4 @@ source ./bash/install/other.sh
 
 
 # install DreamerBC 
-source ./bash/install/dreamerbc.sh
+source ./bash/install/efficient-dreamer.sh

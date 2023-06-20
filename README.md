@@ -1,6 +1,6 @@
 # End-to-End Deep Visual Control for Mastering Needle-Picking Skills With World Models and Behavior Cloning
 
-Official implemetation of needle picking with [DreamerBC](xxx).
+Official implemetation of needle picking with [Efficient-Dreamer]([xxx](https://github.com/linhongbin/efficient-dreamer)).
 
 <img src="doc/media/demo.gif">
 
@@ -81,15 +81,15 @@ Our code was tested in
   ```
 ### 2. Start Training
 
-- **Train with DreamerBC**
+- **Train with Efficient-Dreamer**
   ```sh
   source bash/ambf/init.sh
-  python ext/DreamerBC/examples/suture_json.py --default-json ./ext/DreamerBC/examples/jsons/default_np.yaml --section 1 --logdir ./data/rl_log
+  python ext/efficient-dreamer/example/suture_json.py --default-json ./ext/efficient-dreamer/example/jsons/default_np.yaml --section 1 --logdir ./data/rl_log
   ```
   It will take 3 days on RTX3070 GPU (2 days on RTX 3090)  for convergence of evaluated succeses rate (reaching 80%).
   > Resuming training is supported. To resume training, you need to use different seed number and use the same section number w.r.t. your preivous training, take the previous command for example, you can run
   > ```
-  > python ext/DreamerBC/examples/suture_json.py --default-json ./ext/DreamerBC/examples/jsons/default_np.yaml --section 1 --logdir ./data/rl_log --seed 2
+  > python ext/efficient-dreamer/example/suture_json.py --default-json ./ext/efficient-dreamer/example/jsons/default_np.yaml --section 1 --logdir ./data/rl_log --seed 2
   >```
 
 
@@ -98,7 +98,7 @@ Our code was tested in
   Baseline: [Dreamer](https://danijar.com/project/dreamerv2/)
   ```sh
   source bash/ambf/init.sh
-  python ext/DreamerBC/examples/suture_json.py --default-json ./ext/DreamerBC/examples/jsons/default_np.yaml --json ./ext/DreamerBC/examples/jsons/Dreamer.yaml --section 1 --logdir ./data/rl_log
+  python ext/efficient-dreamer/example/suture_json.py --default-json ./ext/efficient-dreamer/example/jsons/default_np.yaml --json ./ext/efficient-dreamer/example/jsons/Dreamer.yaml --section 1 --logdir ./data/rl_log
   ```
 
 ### 3. Evaluation
@@ -106,7 +106,7 @@ Our code was tested in
   To evaluate a train model, you need to use ```--only-eval``` flag and ```--json``` for the directory to ```<train-log-path>/config.yaml```, for example:
 
   ```sh
-  python ext/DreamerBC/examples/suture_json.py --json ./data/rl_log/ambf-phantom-psm2-segment_script-zoom_needle_boximage-prefill8000-clutch6/DreamerBC/1/config.yaml --only-eval
+  python ext/efficient-dreamer/example/suture_json.py --json ./data/rl_log/ambf-phantom-psm2-segment_script-zoom_needle_boximage-prefill8000-clutch6/Efficient-Dreamer/1/config.yaml --only-eval
   ```
 
 ### 4. Getting Familiar With `gym_suture`
@@ -116,7 +116,7 @@ Our code was tested in
   source bash/ambf/init.sh
   python example/gym_env.py
   ```
-  press keyboard `q` to quit and press other keys to proceed. For details, you can check out [examples](./example/)
+  press keyboard `q` to quit and press other keys to proceed. For details, you can check out [example](./example/)
 
 ### 5. Reproducing Experiments.
 
