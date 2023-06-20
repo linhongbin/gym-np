@@ -84,12 +84,12 @@ Our code was tested in
 - **Train with Efficient-Dreamer**
   ```sh
   source bash/ambf/init.sh
-  python ext/efficient-dreamer/example/suture_json.py --default-json ./ext/efficient-dreamer/example/jsons/default_np.yaml --section 1 --logdir ./data/rl_log
+  python ext/efficient-dreamer/example/suture_json.py --default-json ./ext/efficient-dreamer/example/jsons/suture_np/default_np.yaml --section 1 --logdir ./data/rl_log
   ```
   It will take 3 days on RTX3070 GPU (2 days on RTX 3090)  for convergence of evaluated succeses rate (reaching 80%).
   > Resuming training is supported. To resume training, you need to use different seed number and use the same section number w.r.t. your preivous training, take the previous command for example, you can run
   > ```
-  > python ext/efficient-dreamer/example/suture_json.py --default-json ./ext/efficient-dreamer/example/jsons/default_np.yaml --section 1 --logdir ./data/rl_log --seed 2
+  > python ext/efficient-dreamer/example/suture_json.py --default-json ./ext/efficient-dreamer/example/jsons/suture_np/default_np.yaml --section 1 --logdir ./data/rl_log --seed 2
   >```
 
 
@@ -98,7 +98,7 @@ Our code was tested in
   Baseline: [Dreamer](https://danijar.com/project/dreamerv2/)
   ```sh
   source bash/ambf/init.sh
-  python ext/efficient-dreamer/example/suture_json.py --default-json ./ext/efficient-dreamer/example/jsons/default_np.yaml --json ./ext/efficient-dreamer/example/jsons/Dreamer.yaml --section 1 --logdir ./data/rl_log
+  python ext/efficient-dreamer/example/suture_json.py --default-json ./ext/efficient-dreamer/example/jsons/suture_np/default_np.yaml --json ./ext/efficient-dreamer/example/jsons/suture_np/Dreamer.yaml --section 1 --logdir ./data/rl_log
   ```
 
 ### 3. Evaluation
