@@ -38,7 +38,7 @@ Our code was tested in
 - Easily install our code with a bash file: [run.sh](./bash/install/setting.sh), run the following command:
 
   ```sh
-  source ./bash/install/run.sh
+  source ./bash/install/run.sh # By default, We install tensorflow-gpu==2.9.0 and cuda==11.3 to support GPU training
   ```
 ## Run
   For all command lines, we assume the current directory is `<path to gym-suture>`, otherwise, change directory by
@@ -121,6 +121,15 @@ Our code was tested in
 ### 5. Reproducing Experiments.
 
   To reproduce experiments in [our paper](), you can refer to folder [exp](./exp)
+
+### 6. Monitor Training with Tensorboard.
+
+  To monitor the training process and results with tensorboard, type 
+
+  ```sh
+  source bash/ambf/init.sh
+  tensorboard --logdir ./data/rl_log/
+  ```
 
 ## Citation
 If you find it useful, you can cite our paper:
