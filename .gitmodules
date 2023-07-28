@@ -2,5 +2,3 @@
 	url = https://github.com/collaborative-robotics/surgical_robotics_challenge.git
 [submodule "ext/ambf"]
 	url = https://github.com/WPI-AIM/ambf.git
-[submodule "ext/DreamerfD"]
-	url = https://github.com/linhongbin/DreamerfD
