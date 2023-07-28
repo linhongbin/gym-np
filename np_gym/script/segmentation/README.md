@@ -31,5 +31,5 @@ python segmentation/labelme2coco.py --indir ./data/segmentation/ambf/lableme/ --
 4. run notebook
 5. copy
    ```sh
-   cp segmentation/output/model_final.pth ./gym_suture/model/segment.pth 
+   cp segmentation/output/model_final.pth ./gym_np/model/segment.pth 
    ```

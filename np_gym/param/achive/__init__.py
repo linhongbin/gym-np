@@ -1,5 +1,5 @@
-from gym_suture.param.ambf_phantom import ambf_phantom_param
-from gym_suture.param.dvrk_phantom import dvrk_phantom_param
+from gym_np.param.ambf_phantom import ambf_phantom_param
+from gym_np.param.dvrk_phantom import dvrk_phantom_param
 import numpy as np
 tune_params = {
     "ambf_phantom": ambf_phantom_param,

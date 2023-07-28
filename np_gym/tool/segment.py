@@ -1,6 +1,6 @@
 
-from gym_suture import model
-from gym_suture.tool.common import filter
+from gym_np import model
+from gym_np.tool.common import filter
 from pathlib import Path
 import numpy as np
 import time
@@ -422,7 +422,7 @@ if __name__ == '__main__':
     import cv2
     import sys
     import argparse
-    from gym_suture.env.wrapper import make_env
+    from gym_np.env.wrapper import make_env
     from time import sleep
     import numpy as np
     parser = argparse.ArgumentParser()

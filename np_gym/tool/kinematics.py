@@ -4,7 +4,7 @@ from spatialmath import SE3
 from numpy import pi
 import numpy as np
 import time
-from gym_suture.tool.common import RPY2T, T_2_SE3
+from gym_np.tool.common import RPY2T, T_2_SE3
 PI_2 = pi/2
 
 class PSM_KIN():

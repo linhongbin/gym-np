@@ -8,9 +8,9 @@ from numpy import pi
 import numpy as np
 import argparse
 from tqdm import tqdm
-from gym_suture.tool.common import RPY2T
+from gym_np.tool.common import RPY2T
 # k+=1;print(f"Elapse time: import {k}",time.time() - start)
-# from gym_suture.tracking import DLC_Predictor
+# from gym_np.tracking import DLC_Predictor
 # k+=1;print(f"Elapse time: import {k}",time.time() - start)
 from sklearn.preprocessing import StandardScaler 
 import pickle

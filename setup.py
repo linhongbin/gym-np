@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-setup(name='gym_suture', 
+setup(name='gym_np', 
       version='1.0',
     install_requires=[
         'gym', 

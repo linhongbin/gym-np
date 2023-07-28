@@ -1,5 +1,5 @@
 import argparse
-from gym_suture.env.wrapper import make_env
+from gym_np.env.wrapper import make_env
 from time import sleep
 import numpy as np
 from tqdm import tqdm

@@ -7,14 +7,14 @@ from deeplabcut.pose_estimation_tensorflow.config import load_config
 from skimage import io
 from deeplabcut.utils import auxiliaryfunctions
 import numpy as np
-from gym_suture.tool import PACKAGE_ROOT_PATH
+from gym_np.tool import PACKAGE_ROOT_PATH
 from os.path import join
 from os import listdir, sep
 import numpy as np
-from gym_suture.ros_client import ClientEngine
+from gym_np.ros_client import ClientEngine
 from time import sleep
 import ros_numpy
-from gym_suture.tool.common import PointCloud2_2_xyzNimage, render_rgb_xyz
+from gym_np.tool.common import PointCloud2_2_xyzNimage, render_rgb_xyz
 
 
 class DLC_Predictor():
@@ -119,7 +119,7 @@ class DLC_Predictor():
 
 # class CameraModel(): # not use now since depth cloud could provide frame directly
 #     def __init__(self) -> None:
-#         from gym_suture.param import f, fov_angle, cam_width, cam_height, u0, v0
+#         from gym_np.param import f, fov_angle, cam_width, cam_height, u0, v0
 #         self.kuv = cam_height /2 / np.tan(fov_angle/2) # meaning ku and kv, pixel to distance
 #         self.fuv = f*self.kuv
 #         self.T_cam_project = np.array([[self.fuv, 0, u0, 0],[0,self.fuv,v0,0],[0,0,self.fuv,0]]) # perspecitve projection matrix
@@ -152,7 +152,7 @@ if __name__ == '__main__':
     TEST_DEPTH_IMAGE = False
     TEST_PREDICT_WITH_DEPTH = True
     if TEST_PREDICT:
-        input = "/home/ben/code/robot/gym_suture/data/calibration/alpha-beta-0-0/{}.jpeg".format(8)
+        input = "/home/ben/code/robot/gym_np/data/calibration/alpha-beta-0-0/{}.jpeg".format(8)
         pose_list = dlc_predict(input)
         print(pose_list)
 

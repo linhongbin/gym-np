@@ -11,7 +11,3 @@ source ./bash/install/ambf.sh
 
 # install python packages
 source ./bash/install/other.sh
-
-
-# install DreamerBC 
-source ./bash/install/DreamerfD.sh

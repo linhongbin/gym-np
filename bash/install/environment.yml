@@ -1,4 +1,4 @@
-name: gym_suture
+name: gym_np
 channels:
   - conda-forge
   - anaconda

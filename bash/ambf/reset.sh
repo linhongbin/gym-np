@@ -1,2 +1,2 @@
 source bash/ambf/init.sh 
-python gym_suture/script/control/ambf_reset_psm.py
+python gym_np/script/control/ambf_reset_psm.py

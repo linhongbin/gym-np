@@ -1,7 +1,7 @@
-from gym_suture.env.suture_env import SurgialChallengeEnv
-from gym_suture.param import tune_params
-from gym_suture.tool.segment import SegmentEngine
-from gym_suture.tool.common import resize_img
+from gym_np.env.suture_env import SurgialChallengeEnv
+from gym_np.param import tune_params
+from gym_np.tool.segment import SegmentEngine
+from gym_np.tool.common import resize_img
 import numpy as np
 import cv2
 import time

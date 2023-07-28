@@ -1,5 +1,5 @@
 import argparse
-from gym_suture.env.wrapper import GymSutureEnv
+from gym_np.env.wrapper import GymSutureEnv
 from time import sleep
 import numpy as np
 parser = argparse.ArgumentParser()

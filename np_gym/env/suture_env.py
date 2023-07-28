@@ -1,8 +1,8 @@
 """
 Gym environment for surgical robotic challenge
 """
-from gym_suture.tool.ros_client import PSMClient, ECMClient, WolrdClient
-from gym_suture.tool.common import resize_img, crop2square_img, RPY2T, PointCloud2_2_xyzNimage, scale_rawdepth_2_uint8depth, convert_xyz_2_depth_image, scale
+from gym_np.tool.ros_client import PSMClient, ECMClient, WolrdClient
+from gym_np.tool.common import resize_img, crop2square_img, RPY2T, PointCloud2_2_xyzNimage, scale_rawdepth_2_uint8depth, convert_xyz_2_depth_image, scale
 
 import gym
 import numpy as np

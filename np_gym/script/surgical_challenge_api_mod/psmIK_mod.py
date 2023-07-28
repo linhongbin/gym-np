@@ -46,7 +46,7 @@
 from PyKDL import Vector, Rotation, Frame, dot
 import numpy as np
 import math
-from gym_suture.script.surgical_challenge_api_mod.psmFK_mod import *
+from gym_np.script.surgical_challenge_api_mod.psmFK_mod import *
 
 
 # THIS IS THE IK FOR THE PSM MOUNTED WITH THE LARGE NEEDLE DRIVER TOOL. THIS IS THE

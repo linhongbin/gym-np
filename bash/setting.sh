@@ -1,6 +1,6 @@
 ## Please modify the following vairables according to your environment
 
-ENV_NAME="gym_suture" # conda virtual environment name
+ENV_NAME="gym_np" # conda virtual environment name
 ANACONDA_PATH="${HOME}/anaconda3" 
 DVRK_PATH="${HOME}/dvrk_2_1"
 ROS_WS_PATH="${HOME}/suture_ws"

@@ -1,5 +1,5 @@
 from PyKDL import Frame, Rotation, Vector
-from gym_suture.tool.common import RPY2T
+from gym_np.tool.common import RPY2T
 import numpy as np
 
 
@@ -43,7 +43,7 @@ T_tip_n_2 = Frame(Rotation.RPY(*[0, 0, np.deg2rad(-10)]), Vector(*[0.015,0.103,0
 
 # instrinsic param
 f = 0.01 # it is the distance to near plane, chech out http://www.songho.ca/opengl/gl_projectionmatrix.html
-fov_angle = np.deg2rad(1.2) # check out /home/ben/code/robot/gym_suture/surgical_robotics_challenge/ADF/world/world_stereo.yaml
+fov_angle = np.deg2rad(1.2) # check out /home/ben/code/robot/gym_np/surgical_robotics_challenge/ADF/world/world_stereo.yaml
 cam_width, cam_height = 1920, 1080
 u0, v0 = cam_width/2, cam_height/2
 kuv = cam_height /2 / np.tan(fov_angle/2) # meaning ku and kv, pixel to distance

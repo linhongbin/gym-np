@@ -18,11 +18,11 @@ from queue import Queue
 from typing import List
 from simple_pid import PID
 
-### gym_suture related
-from gym_suture.tool.common import Quaternion2T, RPY2T, gen_interpolate_frames, SE3_2_T, T_2_SE3, RigidBodyState2T, PoseStamped2T, T2Quaternion
-from gym_suture.tool.kinematics import PSM_KIN
-from gym_suture.script.surgical_challenge_api_mod.psmIK_mod import compute_IK
-from gym_suture.script.surgical_challenge_api_mod.psmFK_mod import compute_FK
+### gym_np related
+from gym_np.tool.common import Quaternion2T, RPY2T, gen_interpolate_frames, SE3_2_T, T_2_SE3, RigidBodyState2T, PoseStamped2T, T2Quaternion
+from gym_np.tool.kinematics import PSM_KIN
+from gym_np.script.surgical_challenge_api_mod.psmIK_mod import compute_IK
+from gym_np.script.surgical_challenge_api_mod.psmFK_mod import compute_FK
 from surgical_robotics_challenge.utils.utilities import convert_mat_to_frame
 
 try:

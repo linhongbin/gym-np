@@ -1,10 +1,10 @@
-from gym_suture.tool.ros_client import PSMClient
-from gym_suture.tool.common import RPY2T, T2RPY, Quaternion2T
+from gym_np.tool.ros_client import PSMClient
+from gym_np.tool.common import RPY2T, T2RPY, Quaternion2T
 import rospy
 from time import sleep
 from numpy import pi
 import argparse
-from gym_suture.tool.input import DS_Controller
+from gym_np.tool.input import DS_Controller
 import numpy as np
 
 parser = argparse.ArgumentParser()

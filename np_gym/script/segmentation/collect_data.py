@@ -1,5 +1,5 @@
-from gym_suture.env.wrapper import make_env
-from gym_suture.tool.segment import SegmentEngine
+from gym_np.env.wrapper import make_env
+from gym_np.tool.segment import SegmentEngine
 from tqdm import tqdm
 import cv2
 import pathlib

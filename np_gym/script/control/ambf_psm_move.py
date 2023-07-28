@@ -1,5 +1,5 @@
-from gym_suture.tool.ros_client import PSMClient
-from gym_suture.tool.common import RPY2T, T2RPY, Quaternion2T
+from gym_np.tool.ros_client import PSMClient
+from gym_np.tool.common import RPY2T, T2RPY, Quaternion2T
 import rospy
 from time import sleep
 from numpy import pi

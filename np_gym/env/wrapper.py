@@ -1,6 +1,6 @@
-from gym_suture.env.suture_env import SurgialChallengeEnv
-from gym_suture.tool.common import RPY2T, T2RPY, filter, filter_compare, fill_segment, scale, resize_img, PACKAGE_ROOT_PATH
-from gym_suture.tool.state_estimate import StateEstimator, TaskStates
+from gym_np.env.suture_env import SurgialChallengeEnv
+from gym_np.tool.common import RPY2T, T2RPY, filter, filter_compare, fill_segment, scale, resize_img, PACKAGE_ROOT_PATH
+from gym_np.tool.state_estimate import StateEstimator, TaskStates
 
 
 from typing import List
@@ -14,7 +14,7 @@ import time
 from pathlib import Path
 import ruamel.yaml as yaml
 
-# from gym_suture.calibrate import set_error
+# from gym_np.calibrate import set_error
 # from rospy import spin
 
 radian_list = lambda x: np.deg2rad(np.array(x)).tolist()
@@ -489,7 +489,7 @@ class ImagePreprocess(WrapperModified):
         self.is_depth = self.unwrapped.is_depth
         self.preprocess_type = preprocess_type
         if preprocess_type in ['segment_net', 'segment_script']:
-            from gym_suture.tool.segment import SegmentEngine
+            from gym_np.tool.segment import SegmentEngine
             self.segment_engine = SegmentEngine(process_type=self.preprocess_type,
                                                 robot_type=robot_type,
                                                 image_type=image_type,
@@ -580,7 +580,7 @@ class DualShock_Oracle_Discrete(WrapperModified):
                  sig_keys=None,
                  verbose=0):
         super().__init__(env, verbose)
-        from gym_suture.tool.input import DS_Controller
+        from gym_np.tool.input import DS_Controller
         self._con = DS_Controller(sig_keys=sig_keys)
         try:
             _ = env.action_space.n

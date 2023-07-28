@@ -1,12 +1,12 @@
-from gym_suture.script.surgical_challenge_api_mod.launch_crtk_interface import Client, PSMCRTKWrapper, ECMCRTKWrapper, SceneCRTKWrapper, SceneManager, get_boolean_from_opt, Options
+from gym_np.script.surgical_challenge_api_mod.launch_crtk_interface import Client, PSMCRTKWrapper, ECMCRTKWrapper, SceneCRTKWrapper, SceneManager, get_boolean_from_opt, Options
 # from surgical_robotics_challenge.psm_arm import PSM
-from gym_suture.script.surgical_challenge_api_mod.psm_arm_mod import PSM_Mod
+from gym_np.script.surgical_challenge_api_mod.psm_arm_mod import PSM_Mod
 import time
 import rospy
 from std_msgs.msg import Bool
 from argparse import ArgumentParser
 from geometry_msgs.msg import TransformStamped
-from gym_suture.tool.common import TransformStamped2T
+from gym_np.tool.common import TransformStamped2T
 from sensor_msgs.msg import JointState
 
 class PSMCRTKWrapperModified(PSMCRTKWrapper):

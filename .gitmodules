@@ -1,4 +1,6 @@
 [submodule "ext/surgical_robotics_challenge"]
+	path = ext/surgical_robotics_challenge 
 	url = https://github.com/collaborative-robotics/surgical_robotics_challenge.git
 [submodule "ext/ambf"]
+	path = ext/ambf
 	url = https://github.com/WPI-AIM/ambf.git

@@ -1,5 +1,5 @@
 import numpy as np
-from gym_suture.param.default import default
+from gym_np.param.default import default
 from copy import deepcopy
 dvrk_phantom_param = deepcopy(default)
 dvrk_phantom_param.suture_env.update({
