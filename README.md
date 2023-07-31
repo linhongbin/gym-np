@@ -90,6 +90,7 @@ We try to provide a standard gym protocol for needle picking to learn a pixel-le
   source bash/ambf/init.sh
   python example/env_play.py --action oracle
   ```
+   press keyboard `q` to quit and press other keys to proceed.
 
 ## Learning Algorithm:
 
