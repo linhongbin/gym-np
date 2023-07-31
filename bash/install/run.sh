@@ -1,9 +1,6 @@
 source ./bash/setting.sh
-source $ANACONDA_PATH/bin/activate
-conda create -n $ENV_NAME python=3.7 -y
-conda activate $ENV_NAME
 
-
+source ./bash/conda.sh
 
 # install ambf
 source ./bash/install/ambf.sh

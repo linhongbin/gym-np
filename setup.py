@@ -12,5 +12,6 @@ setup(name='gym_np',
         'spatialmath-python',
         'sympy',
         'roboticstoolbox-python',
+        'ruamel.yaml',
         ], 
       packages=find_packages())
