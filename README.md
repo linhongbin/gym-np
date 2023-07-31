@@ -1,7 +1,13 @@
 # **gym-np**: Open-ai gym for needle picking to learn visuomotor policy
+<p align="center">
+  <img src="doc/media/oracle_demo.gif" width="350" title="hover text">
+</p>
 
 We try to provide a standard gym protocol for needle picking to learn a visuomotor policy using advanced RL algorithms. We built our code based on a the [2021-2022 AccelNet Surgical Challenge](https://collaborative-robotics.github.io/surgical-robotics-challenge/challenge-2021.html). For more information, please visit:
 - [Project Website](https://sites.google.com/view/DreamerfD/home)
+
+
+
 ## Feature
 
   - Benchmark on [AccelNet Surgical Challenge](https://github.com/collaborative-robotics/surgical_robotics_challenge)
